@@ -4,7 +4,7 @@ version = "1.1.0"
 authors = ["Aster <192607617@qq.com>"]
 description = "Piet Mondrian Artworks"
 repository = "https://github.com/GalAster/mondrian-rs"
-readme = "Readme.md"
+readme = "../../Readme.md"
 license = "MPL-2.0"
 edition = "2018"
 

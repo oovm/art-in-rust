@@ -4,12 +4,19 @@ pub use rand::{self, rngs::StdRng, thread_rng, SeedableRng};
 pub use svg::save;
 
 pub struct Mondrian {
-    pub grid_round: f32,
-    pub line_width: f32,
-    pub colors: Vec<String>,
-    pub color_weights: Vec<u32>,
+    /// Canvas size
     pub size: f32,
+    /// Graphic width
     pub width: f32,
+    /// Available colors
+    pub colors: Vec<String>,
+    /// Color Weights
+    pub color_weights: Vec<u32>,
+    /// Grid size
+    pub grid_round: f32,
+    /// Line width
+    pub line_width: f32,
+    /// Random seed
     pub rng: StdRng,
 }
 

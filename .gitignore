@@ -10,4 +10,3 @@
 # Rust
 target/**/*
 Cargo.lock
-*.svg

@@ -1,7 +1,7 @@
 Piet Mondrian Artworks in Rust
 ==============================
 
-
+## Usage
 
 ```rust
 use mondrian::{save, Mondrian};
@@ -19,3 +19,25 @@ fn main() {
 ![](./.github/svgs/iter-5.svg)
 
 ![](./.github/svgs/iter-10.svg)
+
+
+## Options
+
+```rust
+pub struct Mondrian {
+    /// Canvas size
+    pub size: f32,
+    /// Graphic width
+    pub width: f32,
+    /// Available colors
+    pub colors: Vec<String>,
+    /// Color Weights
+    pub color_weights: Vec<u32>,
+    /// Grid size
+    pub grid_round: f32,
+    /// Line width
+    pub line_width: f32,
+    /// Random seed
+    pub rng: StdRng,
+}
+```
