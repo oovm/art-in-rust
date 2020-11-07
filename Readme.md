@@ -1,4 +1,21 @@
-Rust Template Project
-=====================
+Piet Mondrian Artworks in Rust
+==============================
 
-Rust template project for monorepo
+
+
+```rust
+use mondrian::{save, Mondrian};
+
+fn main() {
+    let mut s = Mondrian::default();
+    save("iter-5.svg", &s.generate(5)).unwrap();
+
+    s.new_rng(); // Otherwise it will generate exactly the same graphics
+    s.line_width = 0.8;
+    save("iter-10.svg", &s.generate(10)).unwrap();
+}
+```
+
+![](./.github/svgs/iter-5.svg)
+
+![](./.github/svgs/iter-10.svg)
