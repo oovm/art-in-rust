@@ -1,0 +1,19 @@
+[package]
+name = "mondrian"
+publish = false
+version = "0.1.0"
+authors = ["Aster <192607617@qq.com>"]
+description = "..."
+repository = "..."
+readme = "Readme.md"
+license = "MPL-2.0"
+edition = "2018"
+
+[dependencies]
+rand = "0.7"
+rand_distr = "0.3"
+
+[dev-dependencies]
+
+[features]
+default = []
