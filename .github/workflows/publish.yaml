@@ -19,9 +19,7 @@ jobs:
           override: true
           profile: minimal
       - uses: jetli/wasm-bindgen-action@v0.1.0
-      - name: Install trunk 🗝
-        run: |
-          brew install trunk
+      - uses: jetli/trunk-action@v0.1.0
       - name: Build website 💣
         run: |
           cd projects/mondrian-web
